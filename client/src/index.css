@@ -1,0 +1,30 @@
+@import url("https://googleapis.com");
+@import "tailwindcss";
+
+@theme {
+  --font-shadows: "Shadows Into Light", cursive;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.projects-container::-webkit-scrollbar {
+  width: 15px;
+}
+
+.projects-container::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 10px;
+}
+
+.projects-container::-webkit-scrollbar-thumb {
+  background: #fff4de;
+  border-radius: 10px;
+  border-width: 4px;
+  border-style: solid;
+}
+
+.projects-container::-webkit-scrollbar-thumb:hover {
+  background: #fff4ded2;
+}
