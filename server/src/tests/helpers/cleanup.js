@@ -1,6 +1,7 @@
 const db = require("../../../db");
 
 async function cleanupDatabase() {
+  await db.query("DELETE FROM comments");
   await db.query("DELETE FROM tasks");
   await db.query("DELETE FROM columns");
   await db.query("DELETE FROM boards");

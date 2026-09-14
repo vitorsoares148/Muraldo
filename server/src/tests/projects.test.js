@@ -1,6 +1,8 @@
 const request = require("supertest");
+
 const app = require("../app");
 const db = require("../../db");
+
 const cleanupDatabase = require("./helpers/cleanup");
 
 async function registerUser(name, email) {

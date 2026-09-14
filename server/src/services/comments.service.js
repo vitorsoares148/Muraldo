@@ -258,6 +258,8 @@ async function deleteComment(commentId, userId) {
   }
 }
 
+// ======================================================
+
 module.exports = {
   createComment,
   getComments,
