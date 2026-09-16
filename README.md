@@ -69,18 +69,6 @@ Sistema de comentários diretamente nas tarefas, permitindo comunicação entre 
 - Separar comentários por data
 - Exibir autor e horário dos comentários
 
-### Autenticação e segurança
-
-- Autenticação utilizando JWT
-- Cookies HTTP-only para autenticação
-- Senhas protegidas com bcrypt
-- Configuração de CORS
-- Validação de `Origin` em requisições que alteram dados
-- Headers de segurança utilizando Helmet
-- Rate limiting
-- Autorização baseada em membros e permissões do projeto
-- Queries SQL parametrizadas
-
 ## Tecnologias
 
 ### Frontend
