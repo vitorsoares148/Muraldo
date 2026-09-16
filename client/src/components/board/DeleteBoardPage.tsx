@@ -22,6 +22,7 @@ export default function DeleteBoardPage({
 
   async function handleDeleteBoard() {
     try {
+      setConfirm(false);
       setLoading(true);
 
       const result = await deleteBoard(boardIdNumber);
