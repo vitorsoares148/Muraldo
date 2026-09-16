@@ -91,46 +91,6 @@ Sistema de comentários diretamente nas tarefas, permitindo comunicação entre 
 - Cookie Parser
 - express-rate-limit
 
-### Testes
-
-- Jest
-- Supertest
-- Banco de dados MySQL separado para testes
-
-## Arquitetura
-
-O Muraldo utiliza uma arquitetura em camadas para manter as responsabilidades da aplicação separadas.
-
-```
-Frontend
-│
-├── Components
-├── Pages
-├── Contexts
-├── Services
-├── API
-└── Utils
-        │
-        ▼
-      HTTP
-        │
-        ▼
-Backend
-│
-├── Routes
-├── Controllers
-├── Services
-├── Middleware
-├── Utils
-└── Database
-```
-
-No frontend, os componentes são responsáveis pela interface, os contexts pelo estado compartilhado, os services pelas operações da aplicação e os módulos de API pela comunicação HTTP.
-
-No backend, as routes definem os endpoints, os controllers lidam com as requisições e respostas HTTP, os services concentram as regras de negócio e a camada de banco de dados é responsável pela persistência.
-
-Essa separação facilita a manutenção e permite alterar partes da aplicação sem criar dependências desnecessárias entre as diferentes camadas.
-
 ## Banco de dados
 
 O Muraldo utiliza MySQL como banco de dados relacional.
