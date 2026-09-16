@@ -128,7 +128,7 @@ CREATE TABLE `tasks` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `column_id` int unsigned NOT NULL,
   `assigned_to` int unsigned DEFAULT NULL,
-  `description` VARCHAR(200) NOT NULL
+  `description` VARCHAR(200) NOT NULL,
   `priority` enum('none','low','medium','high','urgent') NOT NULL DEFAULT 'none',
   `due_date` date DEFAULT NULL,
   `position` int unsigned NOT NULL DEFAULT '0',
