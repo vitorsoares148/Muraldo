@@ -1,4 +1,3 @@
-import type { updateProjectProps } from "../types/projects";
 import api from "./axios";
 
 export async function getProjects() {
@@ -58,7 +57,11 @@ export async function updateProject({
   id,
   name,
   description,
-}: updateProjectProps) {
+}: {
+  id: number;
+  name: string;
+  description: string;
+}) {
   const response = await api.put(`/api/projects/${id}`, {
     id,
     name,
