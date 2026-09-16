@@ -2,8 +2,6 @@
 
 Muraldo é uma aplicação de gerenciamento de projetos colaborativa, inspirada em quadros de post-its. A aplicação permite organizar projetos em quadros, colunas e tarefas, além de gerenciar membros, permissões, prazos, prioridades, comentários e conclusão de tarefas.
 
-O projeto foi desenvolvido como uma aplicação full-stack para portfólio, utilizando React, TypeScript, Express e MySQL, com foco em uma arquitetura organizada, controle de autorização, operações transacionais no banco de dados, segurança e testes automatizados.
-
 ## Screenshots
 
 ### Projetos
@@ -103,7 +101,7 @@ Sistema de comentários diretamente nas tarefas, permitindo comunicação entre 
 
 O Muraldo utiliza uma arquitetura em camadas para manter as responsabilidades da aplicação separadas.
 
-```text
+```
 Frontend
 │
 ├── Components
@@ -139,7 +137,7 @@ O Muraldo utiliza MySQL como banco de dados relacional.
 
 A estrutura do banco está disponível no arquivo:
 
-```text
+```
 schema.sql
 ```
 
@@ -279,21 +277,6 @@ Entre as medidas implementadas estão:
 - Rate limiting para proteção de endpoints sensíveis.
 - Verificação de membros e permissões antes de operações protegidas.
 - Queries SQL parametrizadas para evitar SQL injection.
-
-## O que aprendi
-
-O desenvolvimento do Muraldo proporcionou experiência em diferentes áreas do desenvolvimento full-stack, incluindo:
-
-- Estruturação de uma aplicação full-stack
-- Desenvolvimento de APIs REST com Express
-- Modelagem de banco de dados relacional com MySQL
-- Implementação de autenticação e autorização
-- Implementação de permissões baseadas em funções
-- Utilização de transações e bloqueios no banco de dados
-- Implementação de interações drag and drop com dnd-kit
-- Gerenciamento de estado compartilhado com React Context
-- Desenvolvimento de testes automatizados com Jest e Supertest
-- Aplicação de práticas de segurança como CORS, proteção contra CSRF, cookies e rate limiting
 
 ## Licença
 
